@@ -1,0 +1,19 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  annotations:
+    reconcile.fluxcd.io/requestedAt: "2025-05-16T10:19:05.16855529Z"
+  labels:
+    kustomize.toolkit.fluxcd.io/name: flux-system
+    kustomize.toolkit.fluxcd.io/namespace: flux-system
+  name: instavote
+  namespace: flux-system
+spec:
+  interval: 1m
+  ref:
+    branch: main
+  timeout: 1m0s
+  secretRef:
+    name: github-instavote2
+  url: https://github.com/asifdnadaf/instavote.git
