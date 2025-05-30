@@ -15,5 +15,5 @@ spec:
     branch: main
   timeout: 1m0s
   secretRef:
-    name: github-instavote2
-  url: https://github.com/asifdnadaf/instavote.git
+    name: github-instavote
+  url: https://github.com/asifdnadaf/instavote-deploy.git
